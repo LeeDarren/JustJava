@@ -35,13 +35,15 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int price = calculatePrice();
+        int price;
 
         CheckBox hasWhippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
         boolean hasWhippedCream = hasWhippedCreamCheckBox.isChecked();
 
         CheckBox hasChocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
         boolean hasChocolate = hasChocolateCheckBox.isChecked();
+
+        price = calculatePrice(hasWhippedCream, hasChocolate);
 
         EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
         String name = nameEditText.getText().toString();
@@ -87,23 +89,28 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Calculates the price of the order.
-     *
+     * <p>
      * quantity is the number of cups of coffee ordered
      */
-    private int calculatePrice() {
-        return quantity * 5;
+    private int calculatePrice(boolean hasWhippedCream, boolean hasChocolate) {
+        int pricePerCup = 5;
+        if (hasWhippedCream)
+            pricePerCup += 1;
+        if (hasChocolate)
+            pricePerCup += 2;
+        return quantity * pricePerCup;
     }
 
     /**
      * Create summary of the order
      *
-     * @param total The total price
+     * @param total           The total price
      * @param hasWhippedCream Yes if whipped cream is checked
-     * @param hasChocolate Yes if chocolate is checked
+     * @param hasChocolate    Yes if chocolate is checked
      * @return String with order summary
      */
     private String createOrderSummary(int total, boolean hasWhippedCream, boolean hasChocolate,
-                                      String name){
+                                      String name) {
         String summary = "Name: " + name;
         summary += "\nHas whipped cream? " + hasWhippedCream;
         summary += "\nHas chocolate? " + hasChocolate;
