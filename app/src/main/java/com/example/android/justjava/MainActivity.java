@@ -7,11 +7,15 @@ package com.example.android.justjava;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
 
+import static android.R.attr.name;
 import static android.R.attr.y;
 
 /**
@@ -32,7 +36,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
         int price = calculatePrice();
-        displayMessage(createOrderSummary(price));
+
+        CheckBox hasWhippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
+        boolean hasWhippedCream = hasWhippedCreamCheckBox.isChecked();
+
+        CheckBox hasChocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
+        boolean hasChocolate = hasChocolateCheckBox.isChecked();
+
+        EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
+        String name = nameEditText.getText().toString();
+        displayMessage(createOrderSummary(price, hasWhippedCream, hasChocolate, name));
     }
 
     /**
@@ -84,11 +97,16 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Create summary of the order
      *
-     * @param total
+     * @param total The total price
+     * @param hasWhippedCream Yes if whipped cream is checked
+     * @param hasChocolate Yes if chocolate is checked
      * @return String with order summary
      */
-    private String createOrderSummary(int total){
-        String summary = "Name: Darren Lee";
+    private String createOrderSummary(int total, boolean hasWhippedCream, boolean hasChocolate,
+                                      String name){
+        String summary = "Name: " + name;
+        summary += "\nHas whipped cream? " + hasWhippedCream;
+        summary += "\nHas chocolate? " + hasChocolate;
         summary += "\nQuantity: " + quantity;
         summary += "\nTotal: $" + total;
         summary += "\nThank You!";

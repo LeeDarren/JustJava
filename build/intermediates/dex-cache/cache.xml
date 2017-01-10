@@ -3,29 +3,11 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_65d642f7f9057ff3128fbc388144cb3920c917f5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_accc30bb2eacfd806ac096fb7c19dbbcb68b33ef.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="87eacf7ae138b5481d9a875add42aebb90c86e77">
+        sha1="299fbba7cd5b8cda8b967ed03d03c15702d97b4d">
         <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\instant-run_40f718c62c44c106f13b58522da40f7997f6e566.jar" />
     </item>
     <item
@@ -43,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ce4175f6a424f1926d751457d51a1645ffbcb9cc">
+        sha1="4da89479dcc3000d4f13ddc9180e7a8354c07b4c">
         <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_7517e9b1457c0e9a31e2279c853ee42ca11b3c94.jar" />
     </item>
     <item
@@ -66,24 +48,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_509ff31240e26c9bd96ad35e65e64ee6f3c60f72.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_65d642f7f9057ff3128fbc388144cb3920c917f5.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -108,15 +72,6 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_c6f9d1ae3965b62f37b490bc461edf0a01fb9666.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_121a2b9bb9bfa13a02bb80a970a2265c0ef44565.jar" />
     </item>
     <item
         is-multidex="false"
@@ -147,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_bcdcfc3333c0c96a979b06ec4f1d85df042543f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -156,12 +120,48 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_bcdcfc3333c0c96a979b06ec4f1d85df042543f9.jar" />
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_65d642f7f9057ff3128fbc388144cb3920c917f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_accc30bb2eacfd806ac096fb7c19dbbcb68b33ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_509ff31240e26c9bd96ad35e65e64ee6f3c60f72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_65d642f7f9057ff3128fbc388144cb3920c917f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Darren\AndroidStudioProjects\JustJava\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_121a2b9bb9bfa13a02bb80a970a2265c0ef44565.jar" />
     </item>
     <item
         is-multidex="false"
