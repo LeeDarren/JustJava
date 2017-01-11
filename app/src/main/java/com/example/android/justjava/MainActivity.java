@@ -5,6 +5,8 @@
 package com.example.android.justjava;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -49,7 +51,16 @@ public class MainActivity extends AppCompatActivity {
 
         EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
         String name = nameEditText.getText().toString();
-        displayMessage(createOrderSummary(price, hasWhippedCream, hasChocolate, name));
+        //displayMessage(createOrderSummary(price, hasWhippedCream, hasChocolate, name));
+        String message = createOrderSummary(price, hasWhippedCream, hasChocolate, name);
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java order for " + name);
+        intent.putExtra(Intent.EXTRA_TEXT, message);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
     /**
@@ -57,22 +68,23 @@ public class MainActivity extends AppCompatActivity {
      */
     private void displayQuantity(int displayNumber) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + displayNumber);
+        String displayText = "" + displayNumber;
+        quantityTextView.setText(displayText);
     }
 
 
     /**
      * This method displays the given text on the screen.
      */
-    private void displayMessage(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        orderSummaryTextView.setText(message);
-    }
+//    private void displayMessage(String message) {
+//        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
+//        orderSummaryTextView.setText(message);
+//    }
 
     /**
      * This method currently sets the value of quantity to 3 through the display method
      *
-     * @param view
+     * @param view Necessary to be accessed from xml
      */
     public void increment(View view) {
         if (quantity == 100) {
@@ -87,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method currently sets the value of quantity to 1 through the display method
      *
-     * @param view
+     * @param view Necessary to be accessed from xml
      */
     public void decrement(View view) {
         if (quantity == 1) {
