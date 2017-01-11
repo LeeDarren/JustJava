@@ -20,6 +20,7 @@ import java.text.NumberFormat;
 
 import static android.R.attr.duration;
 import static android.R.attr.name;
+import static android.R.attr.order;
 import static android.R.attr.y;
 
 /**
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Just Java order for " + name);
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.order_summary_email_subject, name));
         intent.putExtra(Intent.EXTRA_TEXT, message);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
@@ -135,12 +136,13 @@ public class MainActivity extends AppCompatActivity {
      */
     private String createOrderSummary(int total, boolean hasWhippedCream, boolean hasChocolate,
                                       String name) {
-        String summary = "Name: " + name;
-        summary += "\nHas whipped cream? " + hasWhippedCream;
-        summary += "\nHas chocolate? " + hasChocolate;
-        summary += "\nQuantity: " + quantity;
-        summary += "\nTotal: $" + total;
-        summary += "\nThank You!";
+        String summary = getString(R.string.order_summary_name, name);
+        summary += "\n" + getString(R.string.order_summary_whipped_cream, hasWhippedCream);
+        summary += "\n" + getString(R.string.order_summary_chocolate, hasChocolate);
+        summary += "\n" + getString(R.string.order_summary_quantity, quantity);
+        summary += "\n" + getString(R.string.order_summary_price,
+                NumberFormat.getCurrencyInstance().format(total));
+        summary += "\n" + getString(R.string.thank_you);
         return summary;
     }
 }
