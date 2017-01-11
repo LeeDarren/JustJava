@@ -11,12 +11,12 @@
     <string name="plus">+</string>
     <string name="order">Order</string>
     <!--Other Text-->
-    <string name="order_summary_email_subject">Just Java order for <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="order_summary_email_subject">JustJava order for <xliff:g id="name" example="Amy">%s</xliff:g></string>
 
     <string name="order_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
     <string name="order_summary_whipped_cream">Has whipped cream? <xliff:g id="hasWhippedCream" example="true">%b</xliff:g></string>
     <string name="order_summary_chocolate">Has chocolate? <xliff:g id="hasChocolate" example="true">%b</xliff:g></string>
     <string name="order_summary_quantity">Quantity: <xliff:g id="quantity" example="2">%d</xliff:g></string>
-    <string name="order_summary_price">Total: $<xliff:g id="total" example="$10">%s</xliff:g></string>
+    <string name="order_summary_price">Total: <xliff:g id="total" example="$10">%s</xliff:g></string>
     <string name="thank_you">Thank You!</string>
 </resources>
